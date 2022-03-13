@@ -19,17 +19,19 @@ const CarReservation = () => {
         })
     };
     return (
-        <div className='mt-5'>
-            <h1 className='text-center fw-bold'>Reserve a Car</h1>
+        <div>
+          
             <Container>
-                
+            
 
   <Row>
+  <h1 className='text-center fw-bold'>Reserve a Car</h1>
   <Col xs={12} sm={12} md={6} lg={6}>
+  
     <Container>
   <Row>
     <Col xs={12} sm={12} md={12} lg={12}>
-        <img src='https://media.istockphoto.com/photos/auto-business-car-sale-transportation-people-and-ownership-co-picture-id1053485236?k=20&m=1053485236&s=612x612&w=0&h=Ruh_r3iWpHnrVJb5RfJO2Jw2IzvvYQaHIZG6pME84xc=' className='img-fluid w-100 mission-image image-reserve'></img>
+        <img src='https://media.istockphoto.com/photos/auto-business-car-sale-transportation-people-and-ownership-co-picture-id1053485236?k=20&m=1053485236&s=612x612&w=0&h=Ruh_r3iWpHnrVJb5RfJO2Jw2IzvvYQaHIZG6pME84xc=' className='img-fluid w-100  image-reserve'></img>
     </Col>
   </Row>
 </Container>
@@ -44,7 +46,7 @@ const CarReservation = () => {
       <input {...register("img",)} placeholder="Car Image"/>
       <input {...register("date",)} placeholder="Booking Date"/>
       <input {...register("phone",)} placeholder="Phone Number"/>
-      <input type="submit" />
+      <input type="submit" className='fw-bold' />
     </form> 
 
     </Col>

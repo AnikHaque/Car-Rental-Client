@@ -19,8 +19,8 @@ fetch('http://localhost:5000/cars')
             
             <div className="service-container">
                 <div className="container">
-                <h1 className=" mb-5 text-center fw-bold menu-heading ">Our Cars</h1>
-            <div class="row row-cols-1 row-cols-lg-4 g-4">
+                <h1 className=" text-center fw-bold menu-heading">Our Cars</h1>
+            <div class="row row-cols-1 row-cols-lg-4 g-4 gy-5">
                 {
                     food.map(foods => <IndividualCar
                         key={foods._id}

@@ -8,7 +8,7 @@ const IndividualCar = (props) => {
         <div>
            <div class="col">
     <div class="card h-100 w-100 card-bg p-2">
-      <img src={img} class="card-img-top img-fluid w-100" alt="..."></img>
+      <img src={img} class="card-img-top img-fluid w-100 pt-2 px-2 pe-2" alt="..."></img>
       <div class="card-body">
         <h5 class="card-title text-center fw-bolder">{name}</h5>
         <p className='text-center'>{description.slice(0,60)}</p>

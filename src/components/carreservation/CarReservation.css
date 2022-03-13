@@ -7,13 +7,15 @@ form{
    
     }
     form input {
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
         border: 2px solid rgb(168, 177, 205);
         border-radius: 5px;
+       
         
 
     }
     .image-reserve{
-        margin-top: 120px;
+        margin-top: 45px;
+        border-radius: 7px;
     }

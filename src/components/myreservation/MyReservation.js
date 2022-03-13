@@ -22,13 +22,20 @@ const MyReservation = () => {
       
       <div class="card-body">
           <img src={pd.img} className='img-fluid w-100 reserve-image'></img>
-        <h4 class="card-title text-center text-dark mt-5"><b className='text-car'>Reserved Car:</b><br></br>
+        {/* <h4 class="card-title text-center text-dark mt-5"><b className='text-car'>Reserved Car:</b><br></br>
         {user.displayName}</h4>
         <h4 class="card-title text-center  text-dark"><b className='text-car'>Reserved Car:</b>
         <br></br>{pd.name}</h4>
         <h5 className="text-center text-dark"><b className='text-car'>Car Price:</b> {pd.price} Taka</h5>
         <h5 className="text-center text-dark"><b className='text-car'>Reserve Date:</b> {pd.date} </h5>
-        <h5 className="text-center text-dark"><b className='text-car'>Phone Number:</b> {pd.phone} </h5>
+        <h5 className="text-center text-dark"><b className='text-car'>Phone Number:</b> {pd.phone} </h5> */}
+        <ol className='mt-5 mmm'>
+          <li className='me-2 mb-2'><b className='text-warning me-3'>Reserved By:</b>{user.displayName}</li>
+          <li className='me-2 mb-2'><b className='text-warning me-3'>Reserved Car:</b>{pd.name}</li>
+          <li className='me-2 mb-2'><b className='text-warning me-3'>Car Price:</b>{pd.price}</li>
+          <li className='me-2 mb-2'><b className='text-warning me-3'>Reserve Date:</b>{pd.date}</li>
+          <li className='me-5'><b className='text-warning me-3'>Phone No:</b>{pd.phone}</li>
+        </ol>
       </div>
       
        

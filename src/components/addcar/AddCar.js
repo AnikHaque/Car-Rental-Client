@@ -16,7 +16,7 @@ const AddCar = () => {
     };
     return (
         <div className='add-menu'>
-            <h1 className='text-center fw-bold mb-5 mt-5'>Please Add a Menu !!!</h1>
+            <h1 className='text-center fw-bold mb-5 mt-5'>Please Add a Car !!!</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
       <input {...register("name",)} placeholder="Car Name" />
       <input {...register("description",)} placeholder="Car Description"/>

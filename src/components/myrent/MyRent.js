@@ -22,9 +22,14 @@ const MyRent = () => {
       
       <div class="card-body">
           <img src={pd.image} className='img-fluid w-100'></img>
-        <h4 class="card-title text-center mt-5 text-light"><b className='text-warning'>Ordered Food:</b>{pd.foodname}</h4>
+        {/* <h4 class="card-title text-center mt-5 text-light"><b className='text-warning'>Ordered Food:</b>{pd.foodname}</h4>
         <h5 className="text-center"><b className='text-warning'>Food Price:</b> {pd.price} Taka</h5>
-        <h5 className="text-center"><b className='text-warning'>Delivery Address:</b> {pd.address} </h5>
+        <h5 className="text-center"><b className='text-warning'>Delivery Address:</b> {pd.address} </h5> */}
+        <ol className='mt-5 mmm'>
+          <li className='mb-2'><b className='text-warning me-2'>Rent By:</b> {user.displayName}</li>
+          <li className='mb-2'><b className='text-warning me-2'>Rent Car:</b> {pd.name}</li>
+          <li><b className='text-warning me-2'>Car Price:</b> {pd.price}</li>
+        </ol>
       </div>
       
        

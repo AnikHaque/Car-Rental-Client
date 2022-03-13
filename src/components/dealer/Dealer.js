@@ -10,7 +10,7 @@ const Dealer = () => {
     <Container>
   <Row>
     <Col xs={12} sm={12} md={12} lg={12}>
-        <img src='https://autozone.templines.org/elementor/rental/wp-content/uploads/2016/09/Black-lamborghini-back-view-hd-wallpapers-1080p-cars-470x280.jpg' className='img-fluid w-100 mt-2 mission-image'></img>
+        <img src='https://autozone.templines.org/elementor/rental/wp-content/uploads/2016/09/Black-lamborghini-back-view-hd-wallpapers-1080p-cars-470x280.jpg' className='img-fluid w-100 mt-3 mission-image'></img>
     </Col>
   </Row>
 </Container>

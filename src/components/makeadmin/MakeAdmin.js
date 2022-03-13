@@ -28,7 +28,7 @@ if(data.modifiedCount){
   }
     return (
         <div>
-            <h1 className='text-center fw-bold'>Make Admin</h1>
+            <h1 className='text-center fw-bold mt-5'>Make Admin</h1>
            
 <form onSubmit={handleAdminSubmit}>
     <input type="email" placeholder="enter email" onBlur={handleOnBlur} name="email" className='w-25'></input>

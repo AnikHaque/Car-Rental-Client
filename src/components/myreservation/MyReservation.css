@@ -2,14 +2,14 @@
     border: 3px solid rgb(168, 177, 205);
     box-shadow: 5px 5px 10px rgb(168, 177, 205);
     border-radius: 7px;
-    background-color: bisque;
+    background-color: black;
 
 }
 .text-car{
-    color: rgb(168, 177, 205);
+    color:orange;
     font-weight: bolder;
 }
 .reserve-image{
-    border-radius: 50%;
+    
     box-shadow: 5px 5px 5px rgb(168, 177, 205);
 }

@@ -1,10 +1,13 @@
 .card-bg{
-    box-shadow:3px 3px 10px gray;
+    box-shadow:7px 7px 10px rgb(168, 177, 190);
     border-radius:10px;
-     background-color: blanchedalmond; 
-     border: 5px solid rgb(168, 177, 205);
+     background-color:white; 
+      border: 3px solid rgb(168, 177, 190); 
 }
 h4{
     font-family: poppins;
     font-weight: bolder;
+}
+.menu-heading{
+    margin-bottom: 75px;
 }
