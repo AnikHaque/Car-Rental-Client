@@ -1,0 +1,10 @@
+.card-bg{
+    box-shadow:3px 3px 10px gray;
+    border-radius:10px;
+     background-color: blanchedalmond; 
+     border: 5px solid rgb(168, 177, 205);
+}
+h4{
+    font-family: poppins;
+    font-weight: bolder;
+}
