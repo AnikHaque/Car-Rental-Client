@@ -17,7 +17,7 @@ const CarDetails = () => {
    const { register, handleSubmit, reset } = useForm();
    const onSubmit = data =>{
        console.log(data);
-       axios.post("http://localhost:5000/detailsCar",data)
+       axios.post("https://desolate-dusk-17364.herokuapp.com/detailsCar",data)
        .then(res=>{
            if(res.data.insertedId){
                alert("Added Successfully");
@@ -29,7 +29,7 @@ const CarDetails = () => {
      const {id} = useParams();
     const [food,setFood] = useState({})
      useEffect(()=>{
-         fetch(`http://localhost:5000/cars/${id}`)
+         fetch(`https://desolate-dusk-17364.herokuapp.com/cars/${id}`)
        .then(res=>res.json())
         .then(data=>setFood(data))
 
@@ -51,7 +51,7 @@ const CarDetails = () => {
 
      <br></br>
 <br></br>
-     <input type="text" {...register("price")}placeholder="Rent Price" className='w-100 p-2' defaultValue={food.price} />
+     <input type="text" {...register("price")}placeholder="Rent Price" className='w-100 p-2'/>
      <br></br>
 <br></br>
 <input {...register("image", { required: true, maxLength: 920 })} placeholder="Car Image" className='w-100 p-2'/>

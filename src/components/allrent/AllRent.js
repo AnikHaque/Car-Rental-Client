@@ -5,7 +5,7 @@ const AllRent = () => {
     const [foods, setFoods] = useState([])
     const {user} = useAuth();
     useEffect(() => {
-        fetch('http://localhost:5000/detailsCar')
+        fetch('https://desolate-dusk-17364.herokuapp.com/detailsCar')
             .then(res => res.json())
             .then(data => setFoods(data));
     }, [])
@@ -28,7 +28,7 @@ const AllRent = () => {
         <h5 className="text-center"><b className='text-warning'>Delivery Address:</b> {pd.address} </h5> */}
         <img src={pd.image} className='img-fluid w-100'></img>
         <ol className='text-center mt-5 mmm'>
-          <li><b className='text-warning'>Rent By:</b><br></br>{user.displayName}</li>
+          <li><b className='text-warning'>Rent By:</b><br></br>{user.email}</li>
           <li><b className='text-warning'>Rent Car:</b><br></br>{pd.name}</li>
           <li><b className='text-warning'>Car Price:</b><br></br>{pd.price}</li>
         </ol>

@@ -31,6 +31,7 @@ const Header = () => {
     <Nav.Link as={Link} to="/" className='text-light mx-2 me-2 fw-bold text-center bg-dark'>{user.displayName}</Nav.Link>
     <Nav.Link as={Link} to="/addcar" className='text-dark fw-bold text-center'>Add Car</Nav.Link>
     <Nav.Link as={Link} to="/rents" className='text-dark fw-bold text-center'>Manage Rents</Nav.Link>
+    <Nav.Link as={Link} to="/allreservation" className='text-dark fw-bold text-center'>Manage Reservation</Nav.Link>
     <Nav.Link as={Link} to="/makeadmin" className='text-dark fw-bold text-center'>Make Admin</Nav.Link>
         </NavDropdown>
         }
@@ -40,7 +41,6 @@ const Header = () => {
       <NavDropdown title="User Dashboard" id="basic-nav-dropdown" className='mt-2 fw-bold'>
     <Nav.Link as={Link} to="/" className='text-light mx-2 me-2 fw-bold text-center bg-dark'>{user.displayName}</Nav.Link>
     <Nav.Link as={Link} to="/myrent" className='text-dark fw-bold text-center'>My Rents</Nav.Link>
-    <Nav.Link as={Link} to="/myreserve" className='text-dark fw-bold text-center'>My Reservation</Nav.Link>
         </NavDropdown>
         }
     

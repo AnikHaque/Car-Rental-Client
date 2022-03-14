@@ -10,7 +10,7 @@ const CarReservation = () => {
     const {user} = useAuth();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/reserve',data)
+        axios.post('https://desolate-dusk-17364.herokuapp.com/reserve',data)
         .then(res=>{
            if(res.data.insertedId){
                alert('Added Successfully');
@@ -39,8 +39,8 @@ const CarReservation = () => {
 
     <Col xs={12} sm={12} md={6} lg={6}>
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("email",)} placeholder="Reserved By" defaultValue={user.displayName}/>
-      <input {...register("name",)} placeholder="Car Name" />
+      <input {...register("email",)} placeholder="Reserved By" defaultValue={user.email}/>
+      <input {...register("foodname",)} placeholder="Car Name" />
       <input {...register("description",)} placeholder="Car Description"/>
       <input type="number" {...register("price", )} placeholder="Rent Price"/>
       <input {...register("img",)} placeholder="Car Image"/>

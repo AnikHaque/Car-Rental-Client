@@ -19,6 +19,7 @@ import MyReservation from './components/myreservation/MyReservation';
 import CarReservation from './components/carreservation/CarReservation';
 import Contact from './components/Contact/Contact';
 import Footer from './components/footer/Footer';
+import AllReservation from './components/allreservation/AllReservation';
 function App() {
   return (
     <div className="App">
@@ -49,6 +50,9 @@ function App() {
        </Route>
         <Route exact path="/login">
          <Sign></Sign>
+        </Route>
+        <Route exact path="/allreservation">
+        <AllReservation></AllReservation>
         </Route>
         <Route exact path="/register">
          <Register></Register>

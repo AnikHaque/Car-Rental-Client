@@ -8,7 +8,7 @@ import './Car.css';
 const Car = () => {
     const [food, setFood] = useState([])
     useEffect(()=>{
-fetch('http://localhost:5000/cars')
+fetch('https://desolate-dusk-17364.herokuapp.com/cars')
 .then(res => res.json())
 .then(data => setFood(data))
     },[])
